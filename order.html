@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order — Rayne Enterprises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Rayne Enterprises home">Rayne<span>.</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+            <nav id="nav" class="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">RAYMOTORS</span>
+                <h1>Place Your Order</h1>
+                <p class="lead">Reserve your Rayne A.U.M. Our team will be in touch to confirm the details.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-wrap reveal">
+                <form action="https://formspree.io/f/xldgwvjg" method="POST">
+                    <input type="hidden" name="_subject" value="New A.U.M order">
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="product">Select Product</label>
+                            <select id="product" name="product" required>
+                                <option value="A.U.M White">A.U.M White</option>
+                                <option value="A.U.M Black">A.U.M Black</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="quantity" required min="1" value="1">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Anything we should know?"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-solid">Submit Order</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html">Rayne<span>.</span></a>
+        <nav class="footer-nav" aria-label="Footer">
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p class="copyright">&copy; <span class="year">2026</span> Rayne Enterprises. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
